@@ -1,4 +1,5 @@
-import pytest
+import pytest 
+from Copilot_Bridge_R2 import VectorRenderer, RasterRenderer, Circle  # แก้ไขให้ตรงกับชื่อไฟล์ที่มีคลาสเหล่านี้
 
 def test_vector_renderer():
     # Arrange

@@ -1,7 +1,7 @@
 # Python
 
-import pytest
-from main import Implementer, ConcreteImplementerA, ConcreteImplementerB, Abstraction, RefinedAbstractionA, RefinedAbstractionB
+from Copilot_Adapter_R3 import Implementer, ConcreteImplementerA, ConcreteImplementerB, Abstraction, RefinedAbstractionA, RefinedAbstractionB
+
 
 # Arrange-Act-Assert (AAA) structure
 

@@ -1,5 +1,5 @@
 import pytest
-from Copilot_Bridgr_R3 import ConcreteImplementorA, ConcreteImplementorB, RefinedAbstraction
+from Copilot_Bridge_R3 import ConcreteImplementorA, ConcreteImplementorB, RefinedAbstraction  
 
 def test_refined_abstraction_with_concrete_implementor_a():
     # Arrange

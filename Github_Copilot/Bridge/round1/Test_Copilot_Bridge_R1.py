@@ -1,7 +1,6 @@
 # Python
 
-import pytest
-from main import Renderer, VectorRenderer, RasterRenderer, Shape, Circle
+from Copilot_Bridge_R1 import Renderer, VectorRenderer, RasterRenderer, Shape, Circle
 
 # Arrange-Act-Assert (AAA) structure
 
