@@ -9,20 +9,18 @@ def sample_csv_data():
     ]
 
 def test_process_valid_json(sample_csv_data, monkeypatch):
-    # Arrange
-    class MockCSVReader:
-        def read_data(self):
-            return sample_csv_data
+    # Arrange: จำลองการทำงานของ read_data() ใน CSVReader
+    def mock_read_data(self):
+        return sample_csv_data
 
-    monkeypatch.setattr('data_adapter.CSVReader', MockCSVReader)
+    # ใช้ monkeypatch จำลองฟังก์ชัน read_data ของ CSVReader
+    monkeypatch.setattr(CSVReader, 'read_data', mock_read_data)
+    
     adapter = CSVtoJSONAdapter(CSVReader('mock_file.csv'))
     processor = JSONDataProcessor()
 
     # Act
     processor.process_data(adapter.get_json_data())
-
-    # Assert - Check output (would usually use capsys for this)
-    # Output should contain processed data
 
 def test_process_invalid_json():
     # Arrange

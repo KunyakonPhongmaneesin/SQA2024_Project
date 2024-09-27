@@ -34,3 +34,4 @@ def test_adapter_branch_coverage():
     # Act & Assert
     assert car.drive() == "Car is driving on the road"
     assert boat_adapter.drive() == "Boat is sailing on the water"
+

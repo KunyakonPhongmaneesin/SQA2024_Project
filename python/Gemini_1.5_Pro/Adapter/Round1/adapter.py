@@ -19,10 +19,9 @@ class USAppliance:
         if self.adapter.voltage() == 120 and \
            self.adapter.live_pin() == 1 and \
            self.adapter.neutral_pin() == 2:
-            print("US Appliance powered on.")
+            return "US Appliance powered on."  # แก้ไขจาก print() เป็น return
         else:
-            print("Incompatible power source!")
-
+            return "Incompatible power source!"  # แก้ไขจาก print() เป็น return
 
 # Adapter (adapts EuropeanSocket to USAppliance)
 class USAdapter:
